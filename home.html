@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goldfischteich</title>
+  <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Archivo:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="hero cut">
+    <div class="wrapper">
+      <div class="navbar" data-aos="fade-down">
+        <img src="assets/images/gf-logo.svg" class="logo" />
+        <div class="login">
+          <a href="/athlet">Login</a>
+        </div>
+      </div>
+      <div class="grid container">
+        <div class="grid-item-60" data-aos="fade-up">
+          <h1>Dein persönlicher Trainer, immer in der Tasche.</h1>
+          <p>Dein Coach analysiert anhand einem Screening dein Fitnesslevel und erstellt dir dann einen individuellen Trainingsplan, speziell auf dich zugeschnitten.</p>
+          <div class="btn-group">
+            <a href="/athlet" class="btn btn-primary">Jetzt testen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="grid middle space" data-aos="fade-up">
+      <div class="grid-item-100 first">
+        <h2>So funktioniert's</h2>
+      </div>
+      <div class="grid-item-50">
+        <h6>Schritt 1</h6>
+        <h3>Screening starten</h3>
+        <p>Starte das Screening und führe die vorgegebene Übung durch. Du bekommst Videos, Bilder und eine Beschreibung für die Druchführung. Auf der rechten Seite kannst du dann zutreffendes abhaken und anschließend zur nächsten Übung gehen.</p>
+      </div>
+      <div class="grid-item-50 first">
+        <div class="img-container">
+          <img src="assets/images/screening.png" />
+        </div>
+      </div>
+    </div>
+    <div class="grid middle space" data-aos="fade-up">
+      <div class="grid-item-50 first">
+        <div class="img-container">
+          <img src="assets/images/screening-end.png" />
+        </div>
+      </div>
+      <div class="grid-item-50">
+        <h6>Schritt 2</h6>
+        <h3>Screening durchgeführt</h3>
+        <p>Hast du das Screening erfolgreich durchgeführt, bekommst du einen individuellen und auf deine Bedürfnisse angepassten Trainingsplan erstellt. Diesen kannst du dir im nächsten Schritt ansehen.</p>
+      </div>
+    </div>
+    <div class="grid middle space" data-aos="fade-up">
+      <div class="grid-item-50">
+        <h6>Schritt 3</h6>
+        <h3>Trainingsplan</h3>
+        <p>In diesem Schritt kannst du deinen Trainingsplan sehen. Zu jeder Übung findest du die Anzahl der Sätze, den Wiederholungen, der Pause und wenn benötigt auch noch das einzusetzende Gewicht.</p>
+      </div>
+      <div class="grid-item-50 first">
+        <div class="img-container">
+          <img src="assets/images/training.png" />
+        </div>
+      </div>
+    </div>
+    <div class="grid middle space" data-aos="fade-up">
+      <div class="grid-item-50 first">
+        <div class="img-container">
+          <img src="assets/images/training-start.png" />
+        </div>
+      </div>
+      <div class="grid-item-50">
+        <h6>Schritt 4</h6>
+        <h3>Training gestartet</h3>
+        <p>Wenn du das Training gestartet hast, bekommst du Videos, Bilder und eine Beschreibung für die Druchführung. Zusätzlich noch alle weiteren Informationen zu den Wiederholungen usw. Führe alle Übungen durch.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="wrapper">
+      <div class="grid middle">
+        <div class="grid-item-100">
+          <div class="btn-group">
+            <a href="/athlet" class="btn btn-primary">Jetzt testen</a>
+          </div>
+        </div>
+        <div class="grid-item-100">
+          <p>Goldfischteich 2019 powered by PlaceWorkers GmbH</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init();
+   AOS.init({
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 300, // values from 0 to 3000, with step 50ms
+    duration: 600, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+  </script>
+
+</body>
+
+</html>
