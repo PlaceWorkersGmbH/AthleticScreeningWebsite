@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Goldfischteich</title>
   <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Archivo:400,700" rel="stylesheet">
 </head>
 
@@ -94,8 +94,11 @@
             <a href="/athlet" class="btn btn-primary">Jetzt testen</a>
           </div>
         </div>
-        <div class="grid-item-100">
-          <p>Goldfischteich 2019 powered by PlaceWorkers GmbH</p>
+        <div class="grid-item-50">
+          <p>Goldfischteich &copy; <span id="year"></span> powered by PlaceWorkers GmbH</p>
+        </div>
+        <div class="grid-item-50">
+          <p><a href="./impressum.html">Impressum | Kontakt</a></p>
         </div>
       </div>
     </div>
@@ -103,6 +106,7 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+   document.getElementById("year").innerHTML = new Date().getFullYear();
    AOS.init();
    AOS.init({
     offset: 120, // offset (in px) from the original trigger point
@@ -112,7 +116,6 @@
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
   });
   </script>
 

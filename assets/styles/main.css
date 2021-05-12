@@ -75,7 +75,7 @@ a {
 }
 
 p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -103,6 +103,12 @@ h6 {
 
 p {
   color: #8ba0b0;
+}
+p strong {
+  color: #5c627e;
+}
+li{
+  list-style: decimal;
 }
 
 .btn {
@@ -208,6 +214,16 @@ p {
   background-position: top center;
 }
 
+.hero-small {
+  color: #fff;
+  height: 25vh;
+  overflow: hidden;
+  background: url('../images/bg-hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 .hero p {
   color: #fff;
 }
@@ -229,7 +245,28 @@ p {
   width: 0;
   transform: rotate(180deg);
 }
+.cut-small {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
 
+.cut-small::before {
+  content: '';
+  position: absolute;
+  bottom: -0.05em;
+  left: 0;
+  border-left: 100vw solid #fff;
+  border-bottom: 10vw solid transparent;
+  border-top: 0px solid transparent;
+  width: 0;
+  transform: rotate(180deg);
+}
+.address p {
+  color: #5c627e;
+  line-height: 1.2em;
+  font-size: 1.4em;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
